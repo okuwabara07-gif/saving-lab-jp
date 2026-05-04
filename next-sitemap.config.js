@@ -1,7 +1,7 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
   siteUrl: 'https://saving-lab-jp.vercel.app',
-  generateRobotsTxt: true,
+  generateRobotsTxt: false,
   robotsTxtOptions: {
     additionalSitemaps: ['https://saving-lab-jp.vercel.app/sitemap.xml'],
   },
