@@ -4,7 +4,14 @@ export const metadata: Metadata = {
   description: '節約・貯金情報',
   openGraph: { title: '節約Lab', description: '節約・貯金情報', type: 'website', locale: 'ja_JP', siteName: '節約Lab' },
   twitter: { card: 'summary_large_image', title: '節約Lab', description: '節約・貯金情報' },
-  robots: { index: true, follow: true },
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
 }
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
